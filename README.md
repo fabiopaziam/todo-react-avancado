@@ -1,16 +1,47 @@
-# React + Vite
+# Todo React Avançado
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tecnologias utilizadas
+- React
+- Vite
+- JavaScript
+- Hooks
+- Context API
+- useMemo
+- LocalStorage
 
-Currently, two official plugins are available:
+## Descrição do projeto
+Uma aplicação de lista de tarefas (Todo List) desenvolvida em React.  
+Permite adicionar, marcar como concluída, remover e filtrar tarefas (todas, concluídas, pendentes).  
+A aplicação utiliza Hooks, Context API, memoization e persistência no localStorage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Como rodar o projeto localmente
 
-## React Compiler
+1. Faça o download do repositório:
+   - Clique em "Code" → "Download ZIP"  
+   ou clone com Git:
+   ```bash
+   git clone https://github.com/SEU_USUARIO/todo-react-avancado.git
+   ```
+2. Abra a pasta do projeto no seu computador.
+3. Instale as dependências usando Node.js:
+   ```bash
+   npm install
+   ```
+4. Rode o projeto:
+   ```bash
+   npm run dev
+   ```
+5. Abra no navegador:
+```
+http://localhost:5173/
+```
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Estrutura do projeto
+```
+src/
+  components/   # Componentes React (FormTarefa, ListaTarefas, Tarefa, Filtro)
+  context/      # Context API (TarefasContext)
+  hooks/        # Hooks customizados (useLocalStorage)
+  App.jsx       # Componente principal
+  main.jsx      # Entrada da aplicação
+```
